@@ -9,7 +9,7 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 7860
 
 CMD ["python", "app.py"]
 USER 10001
