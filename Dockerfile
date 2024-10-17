@@ -2,7 +2,7 @@ FROM python:3.9
 
 WORKDIR /home/choreouser
 COPY / /home/choreouser/
-
+RUN chmod 777 /home/choreouser/
 COPY ./requirements.txt /code/requirements.txt
 RUN apt update -y 
 RUN apt upgrade -y
